@@ -1,0 +1,6 @@
+original_text,processed_tokens,processed_text
+Hello World! This is a great day for learning NLP. 😊,"['hello', 'world', 'great', 'day', 'learning', 'nlp']",hello world great day learning nlp
+Machine Learning and Deep Learning are transforming AI!!!,"['machine', 'learning', 'deep', 'learning', 'transforming', 'ai']",machine learning deep learning transforming ai
+Natural Language Processing helps computers understand human language.,"['natural', 'language', 'processing', 'help', 'computer', 'understand', 'human', 'language']",natural language processing help computer understand human language
+"Data Science involves statistics, programming, and domain expertise.","['data', 'science', 'involves', 'statistic', 'programming', 'domain', 'expertise']",data science involves statistic programming domain expertise
+Python is an excellent programming language for AI development.,"['python', 'excellent', 'programming', 'language', 'ai', 'development']",python excellent programming language ai development

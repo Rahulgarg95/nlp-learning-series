@@ -1,0 +1,27 @@
+name: nlp-learning
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - nltk
+  - spacy
+  - gensim
+  - wordcloud
+  - jupyterlab
+  - notebook
+  - ipywidgets
+  - tqdm
+  - pip
+  - pip:
+      - transformers
+      - sentence-transformers
+      - streamlit
+      - textblob
+      - datasets
+      - plotly

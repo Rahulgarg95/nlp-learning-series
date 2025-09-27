@@ -1,0 +1,97 @@
+# Real-World NLP Text Difficulties – Examples from Various Domains
+
+1. Unicode and Encoding Noise
+----------------------------
+Café, naïve, résumé, coöperate, jalapeño, São Paulo
+Invisible chars: zero-width space, bidirectional control \u200e\u202e
+Multilingual chars mixing Latin+Arabic+Cyrillic: مرحبا, привет!
+
+2. Web and Social Media Noise
+-----------------------------
+URLs: Check out https://example.com now! Or ftp://fileserver.local
+Emails: Contact me at john.doe@example.org :-)
+Hashtags & Mentions: #NLProcks @openai
+Repeated characters & emotive punctuation: sooooo excited!!! 😂😂😂
+Slang, abbreviations: LMAO, idk, brb, gonna, wanna, gotta
+
+3. Emojis and Symbols
+---------------------
+Smileys 😄, animals 🐱, flags 🇺🇸🇧🇷, math symbols ∑∫≈∞
+Emoji sequences combining skin tones and modifiers 👩🏽‍💻👨🏻‍🚀
+
+4. Code, Logs, and Technical Text
+---------------------------------
+Code snippets: print("Hello, world!")
+Logs: ERROR [2023-08-15 15:32:10] NullPointerException at line 42
+Commands: $ pip install -r requirements.txt
+
+5. Abbreviations and Domain Slang
+---------------------------------
+Medical: Pt (patient), Rx (prescription), BP (blood pressure), QID (4 times daily)
+Legal: Affidavit, subpoena, prima facie, certiorari
+Finance: ROI, EBITDA, CAGR
+
+6. Dates, Times, and Numerics
+-----------------------------
+Time formats: 14:30, 2:30pm, midnight
+Dates: 2023-07-21, 21/07/2023, July 21st, '21
+Numbers: 3.14, -27, 1,000 or 1 000
+
+7. Mixed Languages and Code-Switching
+-------------------------------------
+"Hola amigos, I will meet you mañana."
+"Vamos to the park after work."
+Handling scripts: English (Latin), Devanagari, Arabic, Chinese
+
+8. Special Formatting and Markup
+--------------------------------
+HTML tags: <div>Hello</div>, <a href="link">
+Markdown: **bold**, *italic*, `code`
+LaTeX math: $E=mc^2$, \int_a^b f(x) dx
+
+9. Noise from OCR and Scanned Text
+----------------------------------
+Misrecognized chars: "l" vs "1", "rn" vs "m"
+Smudges leading to missing letters
+
+10. Privacy and Sensitive Data
+------------------------------
+Personal names, emails masked: <PERSON>, <EMAIL>
+Locations, dates replaced: <LOCATION>, <DATE>
+
+11. Contracted Words and Fixing
+-------------------------------
+I'm -> I am
+don't -> do not
+can't -> cannot
+gonna -> going to
+
+12. Whitespace and Punctuation Challenges
+-----------------------------------------
+Multiple spaces/tabs, line breaks in middle of sentences
+Punctuations as sentiment indicators e.g., "?!", "...", "!!!"
+
+---
+# Sample raw texts to practice
+
+Hello @john! Are you coming to the party tonight??? 😄🎉 Check this: https://party.example.com RSVP asap!
+
+Patient Pt. John Doe reported 98 mg/dL blood glucose at 8:00am on 2023-07-21. Rx: ibuprofen 400mg, qid.
+
+Bonjour! Je m'appelle Marie. C’est une belle journée.
+
+The error was: NullReferenceException at line 57 in MyClass.java #urgent #bugfix
+
+कफ़ी और चाय are ready. Let’s start the meeting at 2:30pm!
+
+Contact us at support@example.org or call +1 (555) 123-4567.
+
+틱톡은 정말 재미있다! LOL 😂😂ㅋㅋㅋ
+
+Schedule: Meeting @ 14:00, lunch 12 noon. HTML tags <script>alert('xss')</script>
+
+Doctor advised to d/c med immediately, monitor BP closely.
+
+---
+
+Use these as test cases in your preprocessing pipeline!
